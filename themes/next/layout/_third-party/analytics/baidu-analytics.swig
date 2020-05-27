@@ -3,8 +3,8 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      if(window.location.href.indexOf('skygitcom.gitee.io')!=-1){
-        hm.src = "https://hm.baidu.com/hm.js?81116f79b6c419d522f77c65a1d4a64c";
+      if(window.location.href.indexOf('skygiter.gitee.io')!=-1){
+        hm.src = "https://hm.baidu.com/hm.js?dba52c6556670659922ba08b29c8abc4";
       }else{
         hm.src = "https://hm.baidu.com/hm.js?{{ theme.baidu_analytics }}";
       }

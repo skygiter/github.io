@@ -1,7 +1,7 @@
 ---
-title: NexT主题个性化配置
+title: Hexo的NexT主题个性化配置
 date: 2020-05-12 10:01:44
-tags: [Hexo,Github,NexT,搭建博客]
+tags: [Hexo,Github,NexT,'搭建博客']
 categories: 
 - Hexo
 - NexT

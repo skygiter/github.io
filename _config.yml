@@ -14,7 +14,7 @@ timezone: UTC
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #url: https://skygiter.github.io
-url: http://skygitcom.gitee.io
+url: http://skygiter.gitee.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -111,8 +111,8 @@ feed:
 deploy:
   type: git
   repo: 
-        github: https://github.com/skygiter/skygiter.github.io.git
-        gitee: git@gitee.com:skygitcom/skygitcom.git
+        github: git@github.com:skygiter/skygiter.github.io.git
+        gitee: git@gitee.com:skygiter/skygiter.git
   branch: master
 
 #search

@@ -1,7 +1,7 @@
 {%- if page.comments %}
 <script>
-if(window.location.href.indexOf('skygitcom.gitee.io')!=-1){
-  document.querySelector('#lv-container').setAttribute("data-uid","MTAyMC81MDI0NS8yNjczNQ==")
+if(window.location.href.indexOf('skygiter.gitee.io')!=-1){
+  document.querySelector('#lv-container').setAttribute("data-uid","MTAyMC81MDI3NS8yNjc2NQ==")
 }
 NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
   window.livereOptions = {
