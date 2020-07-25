@@ -11,7 +11,7 @@ $ hexo new draft "new draft"
 
 ```yaml
 //如果你希望强行预览草稿，更改配置文件：
-render_drafts: true
+render_drafts: true   //经测试发布的时候草稿也会发布
 
 //或者，如下方式启动server：
 $ hexo server --drafts
