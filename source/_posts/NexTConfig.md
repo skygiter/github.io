@@ -1,7 +1,7 @@
 ---
 title: Hexo的NexT主题个性化配置
 date: 2020-05-12 10:01:44
-tags: [Hexo,Github,NexT,'搭建博客']
+tags: [Hexo,Github,NexT,搭建博客]
 categories: 
 - Hexo
 - NexT
@@ -10,7 +10,7 @@ mathjax: true
 ---
 
 **NexT常用配置(部分配置和主题无关)**
-*说明:本人Hexo版本4.2,NexT版本7.8*
+>*说明:本人Hexo版本4.2,NexT版本7.8*
 
 #### 博客显示图片
 设置站点配置文件_config.yml中 post_asset_folder:true。
@@ -598,10 +598,6 @@ github_banner:
   permalink: https://github.com/skygiter
   title: Follow me on GitHub
 ```
-github_banner:
-  enable: true
-  permalink: https://github.com/skygiter
-  title: Follow me on GitHub
 
 方法二:
 [选择代码点这里](https://github.blog/2008-12-19-github-ribbons/)
@@ -626,7 +622,16 @@ follow_me:
   RSS: /atom.xml || fa fa-rss
   Github: https://github.com/skygiter || fab fa-github
 ```
-
+### 回到顶部设置
+themes\next\_config.yml
+```yml
+back2top:
+  enable: true
+  # Back to top in sidebar.
+  sidebar: true
+  # Scroll percent label in b2t button.
+  scrollpercent: true
+```
 
 #### 参考文章
 1. [主要参考文章](https://segmentfault.com/a/1190000009544924)

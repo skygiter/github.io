@@ -1,7 +1,8 @@
 ---
 title: 在Vue项目中关闭Eslint
 date: 2020-07-25 15:32:48
-tags:
+tags: [Vue,Eslint]
+categories: Vue
 ---
 Vue项目开启Eslint经常会报一些格式警报或错误,如果嫌烦可以关闭Eslint
 

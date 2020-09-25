@@ -4,6 +4,26 @@ date: 2020-07-01 14:15:58
 tags: [Git,GitHub]
 categories: Git
 ---
+## 常用命令
+生成ssh秘钥
+```
+ssh-keygen -t rsa -C "youremail"  -f "~/.ssh/id_rsa_github"
+```
+
+查看git配置
+```
+ git config --list
+```
+
+测试连接github
+```
+ssh -T git@github.com
+```
+
+测试连接gitee
+```
+ssh -T git@gitee.com
+```
 
 ## 已有项目上传到github仓库
 ### 方法一:克隆&拷贝

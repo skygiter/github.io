@@ -1,12 +1,11 @@
 ---
 title: 写一个求和的函数sum,达到指定效果
-date: 2020-07-25 14:35:29
-tags: [javascript,前端面试题]
+date: 2020-07-25 20:35:29
+tags: [JavaScript,前端面试题]
 categories:
-- 面试题
-- 前端面试题
+- 前端
+- JavaScript
 ---
-
 
 ```js
 // Should equal 15
@@ -36,7 +35,6 @@ function sum(){
       }catch(e){
         r2=0;
       }
-      console.log('r1='+r1+"  r2="+r2);
       let r=r1>r2?r1:r2;
       let m=Math.pow(10,r);
       if(arguments[i]===true){

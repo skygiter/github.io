@@ -5,6 +5,178 @@ tags: '笔记'
 ---
 # 备忘随笔
 <!--more-->
+### 阿里云云大使
+[阿里云云大使](https://www.aliyun.com/minisite/goods?userCode=qrowrrh0)
+### 骨架屏实现原理
+[参考](https://www.cnblogs.com/strick/p/12175534.html)
+
+### Vue开发多页面应用
+[参考](https://www.jianshu.com/p/eceb2ac9df90)
+[参考](https://segmentfault.com/a/1190000019260231)
+[参考](https://www.cnblogs.com/joyZ/p/13434658.html)
+
+### Vue项目SEO优化
+[参考资料](https://segmentfault.com/a/1190000019623624)
+[参考资料](https://blog.csdn.net/kang_k/article/details/100514042)
+[参考资料](https://blog.csdn.net/chjj0904/article/details/79388438)
+### Vue history模式打包空白
+
+### Vue 行内样式含变量不生效
+
+### Vue项目中使用图标字体的几种方式
+[参考资料](https://www.cnblogs.com/hahahakc/p/13025069.html)
+
+### Vue---组件引入及使用的几种方式
+[参考资料](https://www.cnblogs.com/e0yu/p/10795176.html)
+
+### Problems loading reference : Unable to load schema from : Unable to connect......
+[参考资料](https://blog.csdn.net/qq_38918953/article/details/106518204)
+文件-首选项-设置-应用程序 - proxy Authorization
+```json
+ "http.proxyAuthorization": "false"
+```
+>注意: false是字符串
+### Vue使用strict模式导致js某些方法不能使用
+Exception: TypeError: 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them at Function
+
+### js获取函数自身函数名
+
+### Vue 响应式布局
+[参考文章](https://www.cnblogs.com/pcysoushu/p/13130359.html)
+
+### Element-ui 导航点击当前页面报错
+[参考文章](https://blog.csdn.net/qq_42023279/article/details/107333933)
+```js
+element-ui.common.js?ccbf:3354 Error: Avoided redundant navigation to current location: "/users".
+```
+解决方案: router/index.js  中加入如下代码
+```js
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+```
+
+### Element-ui  input密码框  
+添加 show-password  用户可切换密码显示或隐藏,默认隐藏
+添加 type="password" 则为隐藏状态,不可切换
+### Element-ui  tree getCheckedKeys/getHalfCheckedKeys
+### Element-ui  ref  属性
+
+
+### splice 用法
+### js数组有哪些方法,哪些能改变原数组,哪些不能?
+### el-table  折叠列  宽度设置   width=200/"200px"
+
+
+### Vue 导航守卫
+
+
+### Vue 路由及组件懒加载
+[参考资料](https://www.cnblogs.com/xiaoxiaoxun/p/11001884.html)
+
+
+
+### el-table   ref,prop,data,slot-scope属性
+
+
+### Vue中prop data method computed 的命名冲突处理策略
+[参考资料](https://blog.csdn.net/lyt_angularjs/article/details/105121406?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param)
+
+
+###  Http常见请求方式有哪些?有什么区别?
+
+
+### :model和v-model的区别
+
+
+### Http  Authorization
+
+
+### element  template  eslint  报错
+[参考资料](https://blog.csdn.net/hongkid/article/details/96035394)
+安装
+```bash
+npm install --save-dev eslint-config-elemefe eslint
+```
+.eslintrc file添加
+```json
+{
+  "extends": "elemefe"
+}
+```
+### ${} es6模板字符串插变量
+console.log( ` name  :  ${name} , age : ${age} , gender : ${gender} ` )
+
+### Vue项目配置favicon
+
+### 嵌套路由页面跳转子路由内容不显示
+
+### VSCode快捷键
+[参考资料](https://www.cnblogs.com/bindong/p/6045957.html)
+
+### js对象深拷贝的3种方法   已生成
+js对象不像变量那样，简单的赋值就能进行克隆的，对象进行赋值时，只是创建了一个新的指针指向相同的存储空间。就像这样
+```js
+var a={a:1}
+var b=a;
+b.a=2
+console.log(a.a);  // 2
+```
+这时输出a你会发现，a的值同样发生了改变。
+这一点在你进行数据操作时，又想保留原来数据时，你就需要深度克隆了。
+
+1. 方法一:js序列化
+
+有一种时通过js序列化，将js转换成字符串，然后再将字符串转换成js对象。
+
+具体代码为:
+```js
+var obj = {a:1};
+var str = JSON.stringify(obj); //序列化对象
+var newobj = JSON.parse(str); //还原
+```
+2. 方法二:对象遍历逐条复制
+就是进行对象的遍历复制，对对象的每一条属性进行复制，这样就能进行对象的深度克隆
+```js
+function deepCopy(obj) {
+  var str, newobj = obj.constructor === Array ? [] : {};//constructor 属性返回对创建此对象的数组函数的引用。创建相同类型的空数据
+  if (typeof obj !== 'object') {
+    return;
+  } else {
+    for (var i in obj) {
+      if (typeof obj[i] === 'object'){//判断对象的这条属性是否为对象
+        newobj[i] = newObj(obj[i]);//若是对象进行嵌套调用
+      }else{
+        newobj[i] = obj[i];
+      }
+    }
+  }
+  return newobj;//返回深度克隆后的对象
+};
+```
+3. 方法三: ES6对象展开赋值
+还一种就是应用es6的语法对象展开运算符进行对象的展开赋值；
+```js
+let a = {a:0}
+let b = {...a}
+```
+>是不是太简单了?!
+
+[参考资料](https://blog.csdn.net/huchangjiang0/article/details/79990068)
+
+### 打包报错:No module factory available for dependency type: CssDependency   已生成
+[参考资料](https://blog.csdn.net/weixin_45615791/article/details/104294458)
+问题描述：在打包过程出现 没有可用于依赖类型的模块 CssDependency
+在vue.config.js中添加就可以解决问题
+```js
+module.exports = {
+  css: {
+    extract: false
+  }
+};
+```
+ 
 ### Hexo IDE表格预览正常,网页原文输出
 表格代码前后均需留最少一个空行
 前面不留空行表格会原文输出,后面不留空行后面的文本会追加到表格
