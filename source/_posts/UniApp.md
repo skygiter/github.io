@@ -4,7 +4,7 @@ date: 2020-09-14 20:42:57
 tags:  [前端,uni-app,vue,小程序]
 categeries: 
 - 前端
--- uni-app
+- uni-app
 ---
 
 ## 什么是 uni-app?
