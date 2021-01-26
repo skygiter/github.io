@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Skygit的技术博客</title>
+  
+  <subtitle>闻道有先后,术业有专攻</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://skygiter.gitee.io/"/>
+  <updated>2021-01-26T07:08:59.349Z</updated>
+  <id>http://skygiter.gitee.io/</id>
+  
+  <author>
+    <name>Skygit</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue.js入门教程</title>
+    <link href="http://skygiter.gitee.io/2021/01/19/vue-base/"/>
+    <id>http://skygiter.gitee.io/2021/01/19/vue-base/</id>
+    <published>2021-01-18T19:29:16.000Z</published>
+    <updated>2021-01-26T07:08:59.349Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue项目SEO优化的4种方案</title>
+    <link href="http://skygiter.gitee.io/2020/10/13/Vue4waysForSEO/"/>
+    <id>http://skygiter.gitee.io/2020/10/13/Vue4waysForSEO/</id>
+    <published>2020-10-12T20:20:06.000Z</published>
+    <updated>2021-01-26T07:08:59.347Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="SEO" scheme="http://skygiter.gitee.io/tags/SEO/"/>
+    
+      <category term="SSR" scheme="http://skygiter.gitee.io/tags/SSR/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>uni-app快速入门</title>
+    <link href="http://skygiter.gitee.io/2020/09/15/UniApp/"/>
+    <id>http://skygiter.gitee.io/2020/09/15/UniApp/</id>
+    <published>2020-09-14T20:42:57.000Z</published>
+    <updated>2021-01-26T07:08:59.346Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="uni-app" scheme="http://skygiter.gitee.io/tags/uni-app/"/>
+    
+      <category term="vue" scheme="http://skygiter.gitee.io/tags/vue/"/>
+    
+      <category term="小程序" scheme="http://skygiter.gitee.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue和微信小程序的区别</title>
+    <link href="http://skygiter.gitee.io/2020/09/15/VueVSWechatMiniPro/"/>
+    <id>http://skygiter.gitee.io/2020/09/15/VueVSWechatMiniPro/</id>
+    <published>2020-09-14T16:31:01.000Z</published>
+    <updated>2021-01-26T07:08:59.347Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="微信小程序" scheme="http://skygiter.gitee.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo常用指令</title>
+    <link href="http://skygiter.gitee.io/2020/08/12/HexoCommands/"/>
+    <id>http://skygiter.gitee.io/2020/08/12/HexoCommands/</id>
+    <published>2020-08-11T19:15:19.000Z</published>
+    <updated>2021-01-26T07:08:59.340Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;init&quot;&gt;&lt;a href=&quot;#init&quot; class=&quot;headerlink&quot; title=&quot;init&quot;&gt;&lt;/a&gt;init&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo init [folder]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。&lt;/p&gt;
+&lt;h3 id=&quot;new&quot;&gt;&lt;a href=&quot;#new&quot; class=&quot;headerlink&quot; title=&quot;new&quot;&gt;&lt;/a&gt;new&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo new [layout] &amp;lt;title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;可选参数&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;-p, –path&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自定义新文章的路径&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;-r, –replace&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;如果存在同名文章，将其替换&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;-s, –slug&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;文章的 Slug，作为新文章的文件名和发布后的 URL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="博客搭建" scheme="http://skygiter.gitee.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue组件引入及使用的几种方式</title>
+    <link href="http://skygiter.gitee.io/2020/08/06/ImportComponentInVue/"/>
+    <id>http://skygiter.gitee.io/2020/08/06/ImportComponentInVue/</id>
+    <published>2020-08-05T21:17:59.000Z</published>
+    <updated>2021-01-26T07:08:59.342Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue项目中使用图标字体的几种方式</title>
+    <link href="http://skygiter.gitee.io/2020/08/06/IconfontInVue/"/>
+    <id>http://skygiter.gitee.io/2020/08/06/IconfontInVue/</id>
+    <published>2020-08-05T21:14:03.000Z</published>
+    <updated>2021-01-26T07:08:59.342Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="Iconfont" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/Iconfont/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="Iconfont" scheme="http://skygiter.gitee.io/tags/Iconfont/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DeepCopy</title>
+    <link href="http://skygiter.gitee.io/2020/07/27/DeepCopy/"/>
+    <id>http://skygiter.gitee.io/2020/07/27/DeepCopy/</id>
+    <published>2020-07-26T21:01:42.000Z</published>
+    <updated>2021-01-26T07:08:59.338Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;js对象深拷贝的3种方法&quot;&gt;&lt;a href=&quot;#js对象深拷贝的3种方法&quot; class=&quot;headerlink&quot; title=&quot;js对象深拷贝的3种方法&quot;&gt;&lt;/a&gt;js对象深拷贝的3种方法&lt;/h3&gt;&lt;p&gt;js对象不像变量那样，简单的赋值就能进行克隆的，对象进行赋值时，只是创建了一个新的指针指向相同的存储空间。就像这样&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a=&amp;#123;&lt;span class=&quot;attr&quot;&gt;a&lt;/span&gt;:&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; b=a;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;b.a=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(a.a);  &lt;span class=&quot;comment&quot;&gt;// 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这时输出a你会发现，a的值同样发生了改变。&lt;br&gt;这一点在你进行数据操作时，又想保留原来数据时，你就需要深度克隆了。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="前端面试题" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="JavaScript" scheme="http://skygiter.gitee.io/tags/JavaScript/"/>
+    
+      <category term="深拷贝" scheme="http://skygiter.gitee.io/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue项目打包报错:No module factory available for dependency type:CssDependency</title>
+    <link href="http://skygiter.gitee.io/2020/07/27/WebpackErrorCssDependency/"/>
+    <id>http://skygiter.gitee.io/2020/07/27/WebpackErrorCssDependency/</id>
+    <published>2020-07-26T20:27:48.000Z</published>
+    <updated>2021-01-26T07:08:59.347Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Webpack" scheme="http://skygiter.gitee.io/categories/Webpack/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="Webpack" scheme="http://skygiter.gitee.io/tags/Webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>写一个求和的函数sum,达到指定效果</title>
+    <link href="http://skygiter.gitee.io/2020/07/26/JsCase00/"/>
+    <id>http://skygiter.gitee.io/2020/07/26/JsCase00/</id>
+    <published>2020-07-25T20:35:29.000Z</published>
+    <updated>2021-01-26T07:08:59.343Z</updated>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Should equal 15&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sum(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Should equal 0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sum(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;-5&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Should equal 10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sum(&lt;span class=&quot;string&quot;&gt;&#39;1.0&#39;&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;A&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;B&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;C&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;D&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;E&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;F&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;G&#39;&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// Should equal 0.3,not 0.30000000000000004&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sum(&lt;span class=&quot;number&quot;&gt;0.1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0.2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JavaScript" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
+    
+    
+      <category term="前端面试题" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="JavaScript" scheme="http://skygiter.gitee.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在Vue项目中关闭Eslint</title>
+    <link href="http://skygiter.gitee.io/2020/07/25/CloseEslintInVue/"/>
+    <id>http://skygiter.gitee.io/2020/07/25/CloseEslintInVue/</id>
+    <published>2020-07-25T15:32:48.000Z</published>
+    <updated>2021-01-26T07:08:59.338Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Vue项目开启Eslint经常会报一些格式警报或错误,如果嫌烦可以关闭Eslint&lt;/p&gt;
+&lt;p&gt;vue-cli4如何关闭ESlint?&lt;br&gt;/vue.config.js中将lintOnSave属性设置为false，如果没有就自己写个进去。&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;module&lt;/span&gt;.exports = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  lintOnSave: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/categories/Vue/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="Eslint" scheme="http://skygiter.gitee.io/tags/Eslint/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue项目中如何优雅的使用Stylus</title>
+    <link href="http://skygiter.gitee.io/2020/07/25/StylusInVue/"/>
+    <id>http://skygiter.gitee.io/2020/07/25/StylusInVue/</id>
+    <published>2020-07-25T14:58:26.000Z</published>
+    <updated>2021-01-26T07:08:59.346Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;引用stylus官网中的一句话：富于表现力、动态的、健壮的 CSS&lt;br&gt;stylus是一个强大的css预编译语言,stylus支持省略花括号，支持省略分号，代码整洁，支持引入，并且支持语法内函数&lt;br&gt;&lt;a href=&quot;https://stylus.bootcss.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官方地址&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/stylus/stylus/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用非常简单&lt;br&gt;安装stylus，使用npm安装,stylus和stylus-loader，一个都不能少&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install stylus stylus-loader --save-dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;使用分为两种，一种是直接在vue中的style模块中使用，这时在style模块中规定好就可以了&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;style lang&amp;#x3D;&amp;quot;stylus&amp;quot; rel&amp;#x3D;&amp;quot;stylesheet&amp;#x2F;stylus&amp;quot;&amp;gt;&amp;lt;&amp;#x2F;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;还有一种是作为.styl文件引入&lt;br&gt;把css内容放在styl文件中，然后在vue的style模块中通过@import引入&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS预处理器" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/"/>
+    
+      <category term="Stylus" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/CSS%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8/Stylus/"/>
+    
+    
+      <category term="Vue" scheme="http://skygiter.gitee.io/tags/Vue/"/>
+    
+      <category term="Stylus" scheme="http://skygiter.gitee.io/tags/Stylus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元素水平垂直居中(4种方式)</title>
+    <link href="http://skygiter.gitee.io/2020/07/25/Center/"/>
+    <id>http://skygiter.gitee.io/2020/07/25/Center/</id>
+    <published>2020-07-25T14:26:22.000Z</published>
+    <updated>2021-01-26T07:08:59.338Z</updated>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;已知块级元素的宽和高，使用绝对定位absolute和外边距实现水平垂直居中。&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;box&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;center-box1&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;第一种方法: 知道长和宽，使用绝对定位+外边距设定水平垂直居中&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;p&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.box &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background: #6c94be;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: 100%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    height: 450px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    position: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.center-box1 &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    position: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    top: 50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    left: 50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    margin-top: -100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    margin-left: -100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: 200px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    height: 200px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background: #5B83AD;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;&lt;/ol&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML/CSS" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/HTML-CSS/"/>
+    
+    
+      <category term="前端面试题" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="HTML/CSS" scheme="http://skygiter.gitee.io/tags/HTML-CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo表格写法</title>
+    <link href="http://skygiter.gitee.io/2020/07/25/HexoTable/"/>
+    <id>http://skygiter.gitee.io/2020/07/25/HexoTable/</id>
+    <published>2020-07-25T13:27:18.000Z</published>
+    <updated>2021-01-26T07:08:59.341Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;示例：&lt;/p&gt;
+&lt;figure class=&quot;highlight markdown&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;| 表头 | 表头 | 表头 |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;| --- | --- | --- |&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|第一行|第一行|第一行|&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|第二行|第二行|第二行|&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;|第三行|第三行|第三行|&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;说明:第二行分割表头和内容。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;有一个就行，为了对齐，多加了几个&lt;br&gt;文字默认居左&lt;/li&gt;
+&lt;li&gt;两边加：表示文字居中&lt;/li&gt;
+&lt;li&gt;右边加：表示文字居右&lt;br&gt;注：原生的语法两边都要用 | 包起来&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="Markdown" scheme="http://skygiter.gitee.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git手册</title>
+    <link href="http://skygiter.gitee.io/2020/07/01/GitManual/"/>
+    <id>http://skygiter.gitee.io/2020/07/01/GitManual/</id>
+    <published>2020-07-01T14:15:58.000Z</published>
+    <updated>2021-01-26T07:08:59.339Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Git" scheme="http://skygiter.gitee.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://skygiter.gitee.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://skygiter.gitee.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 多终端管理</title>
+    <link href="http://skygiter.gitee.io/2020/05/26/HexoMultiTerminal/"/>
+    <id>http://skygiter.gitee.io/2020/05/26/HexoMultiTerminal/</id>
+    <published>2020-05-26T11:24:01.000Z</published>
+    <updated>2021-01-26T07:08:59.341Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://skygiter.gitee.io/tags/Github/"/>
+    
+      <category term="博客搭建" scheme="http://skygiter.gitee.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo之Github&amp;Gitee双托管</title>
+    <link href="http://skygiter.gitee.io/2020/05/25/hexoDeployOnGitee/"/>
+    <id>http://skygiter.gitee.io/2020/05/25/hexoDeployOnGitee/</id>
+    <published>2020-05-25T09:39:01.000Z</published>
+    <updated>2021-01-26T07:08:59.348Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://skygiter.gitee.io/tags/Github/"/>
+    
+      <category term="NexT" scheme="http://skygiter.gitee.io/tags/NexT/"/>
+    
+      <category term="搭建博客" scheme="http://skygiter.gitee.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Gitee" scheme="http://skygiter.gitee.io/tags/Gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo的NexT主题个性化配置</title>
+    <link href="http://skygiter.gitee.io/2020/05/12/NexTConfig/"/>
+    <id>http://skygiter.gitee.io/2020/05/12/NexTConfig/</id>
+    <published>2020-05-12T10:01:44.000Z</published>
+    <updated>2021-01-26T07:08:59.344Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;NexT常用配置(部分配置和主题无关)&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;说明:本人Hexo版本4.2,NexT版本7.8&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;博客显示图片&quot;&gt;&lt;a href=&quot;#博客显示图片&quot; class=&quot;headerlink&quot; title=&quot;博客显示图片&quot;&gt;&lt;/a&gt;博客显示图片&lt;/h4&gt;&lt;p&gt;设置站点配置文件_config.yml中 post_asset_folder:true。&lt;br&gt;Hexo 提供了一种更方便管理 Asset 的设定：post_asset_folder当您设置post_asset_folder为true参数后，在建立文件时，Hexo会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到那个文件夹。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+      <category term="NexT" scheme="http://skygiter.gitee.io/categories/Hexo/NexT/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://skygiter.gitee.io/tags/Github/"/>
+    
+      <category term="NexT" scheme="http://skygiter.gitee.io/tags/NexT/"/>
+    
+      <category term="搭建博客" scheme="http://skygiter.gitee.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建Github博客</title>
+    <link href="http://skygiter.gitee.io/2020/05/12/HexoBuildBlog/"/>
+    <id>http://skygiter.gitee.io/2020/05/12/HexoBuildBlog/</id>
+    <published>2020-05-12T08:59:52.000Z</published>
+    <updated>2021-01-26T07:08:59.340Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言-amp-Hexo概述&quot;&gt;&lt;a href=&quot;#前言-amp-Hexo概述&quot; class=&quot;headerlink&quot; title=&quot;前言 &amp;amp; Hexo概述&quot;&gt;&lt;/a&gt;前言 &amp;amp; Hexo概述&lt;/h3&gt;&lt;p&gt;对于一个程序员来说，搭建一个属于自己的博客平台是非常有意义的事情。首先，博客可以记录自己的成长历程，也是对自己一段时间学习和工作的总结和沉淀；其他，通过博客可以营销自己，增强自己在互联网或行业内的影响力，为将来更好的职业生涯打一个坚实的基础。&lt;/p&gt;
+&lt;p&gt;Hexo是一个快速、简洁且高效的博客框架，它能够将Markdown格式的文档渲染成漂亮的网页，这样就可以在很短的时间内迅速的创建出网站的静态内容，而Markdown格式对程序员来说相信并不陌生。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://skygiter.gitee.io/tags/Hexo/"/>
+    
+      <category term="Github" scheme="http://skygiter.gitee.io/tags/Github/"/>
+    
+      <category term="NexT" scheme="http://skygiter.gitee.io/tags/NexT/"/>
+    
+      <category term="搭建博客" scheme="http://skygiter.gitee.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
