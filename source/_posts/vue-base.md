@@ -15,6 +15,8 @@ categories:
 
 # Vue版本和Vue-cli版本的区别
 
+<!--more-->
+
 # Vue2.0和 Vue3.0的区别
 
 # webpack属性配置
