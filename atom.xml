@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://skygiter.gitee.io/"/>
-  <updated>2021-01-26T07:08:59.349Z</updated>
+  <updated>2021-01-27T02:54:25.649Z</updated>
   <id>http://skygiter.gitee.io/</id>
   
   <author>
@@ -21,17 +21,13 @@
     <link href="http://skygiter.gitee.io/2021/01/19/vue-base/"/>
     <id>http://skygiter.gitee.io/2021/01/19/vue-base/</id>
     <published>2021-01-18T19:29:16.000Z</published>
-    <updated>2021-01-26T07:08:59.349Z</updated>
+    <updated>2021-01-27T02:54:25.649Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;h1 id=&quot;vue-js中data为什么是个函数？&quot;&gt;&lt;a href=&quot;#vue-js中data为什么是个函数？&quot; class=&quot;headerlink&quot; title=&quot;vue.js中data为什么是个函数？&quot;&gt;&lt;/a&gt;vue.js中data为什么是个函数？&lt;/h1&gt;&lt;p&gt;函数形成闭包，避免数据污染&lt;/p&gt;
+&lt;h1 id=&quot;export-default-xxx-和-export-xxx-的区别？&quot;&gt;&lt;a href=&quot;#export-default-xxx-和-export-xxx-的区别？&quot; class=&quot;headerlink&quot; title=&quot;export default xxx 和 export xxx 的区别？&quot;&gt;&lt;/a&gt;export default xxx 和 export xxx 的区别？&lt;/h1&gt;&lt;p&gt;导出1个和多个的问题，前者可导出多个，后者导出一个方法&lt;/p&gt;
+&lt;h1 id=&quot;Vue版本和Vue-cli版本的区别&quot;&gt;&lt;a href=&quot;#Vue版本和Vue-cli版本的区别&quot; class=&quot;headerlink&quot; title=&quot;Vue版本和Vue-cli版本的区别&quot;&gt;&lt;/a&gt;Vue版本和Vue-cli版本的区别&lt;/h1&gt;
     
     </summary>
     
@@ -52,7 +48,7 @@
     <link href="http://skygiter.gitee.io/2020/10/13/Vue4waysForSEO/"/>
     <id>http://skygiter.gitee.io/2020/10/13/Vue4waysForSEO/</id>
     <published>2020-10-12T20:20:06.000Z</published>
-    <updated>2021-01-26T07:08:59.347Z</updated>
+    <updated>2021-01-27T01:45:43.673Z</updated>
     
     <summary type="html">
     
@@ -85,17 +81,31 @@
     <link href="http://skygiter.gitee.io/2020/09/15/UniApp/"/>
     <id>http://skygiter.gitee.io/2020/09/15/UniApp/</id>
     <published>2020-09-14T20:42:57.000Z</published>
-    <updated>2021-01-26T07:08:59.346Z</updated>
+    <updated>2021-01-27T02:55:12.268Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          
-        
-      
+      &lt;h2 id=&quot;什么是-uni-app&quot;&gt;&lt;a href=&quot;#什么是-uni-app&quot; class=&quot;headerlink&quot; title=&quot;什么是 uni-app?&quot;&gt;&lt;/a&gt;什么是 uni-app?&lt;/h2&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;uni-app 是一个使用 Vue.js 开发所有前端应用的框架，开发者编写一套代码，可发布到iOS、Android、H5、以及各种小程序（微信/支付宝/百度/头条/QQ/钉钉/淘宝）、快应用等多个平台。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DCloud公司拥有500万开发者用户，几十万应用案例、10亿手机端月活用户，数千款uni-app插件、70+微信/qq群。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;uni-app在手，做啥都不愁。即使不跨端，uni-app也是更好的小程序开发框架、更好的App跨平台框架、更方便的H5开发框架。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -116,7 +126,7 @@
     <link href="http://skygiter.gitee.io/2020/09/15/VueVSWechatMiniPro/"/>
     <id>http://skygiter.gitee.io/2020/09/15/VueVSWechatMiniPro/</id>
     <published>2020-09-14T16:31:01.000Z</published>
-    <updated>2021-01-26T07:08:59.347Z</updated>
+    <updated>2021-01-27T01:45:43.673Z</updated>
     
     <summary type="html">
     
@@ -145,7 +155,7 @@
     <link href="http://skygiter.gitee.io/2020/08/12/HexoCommands/"/>
     <id>http://skygiter.gitee.io/2020/08/12/HexoCommands/</id>
     <published>2020-08-11T19:15:19.000Z</published>
-    <updated>2021-01-26T07:08:59.340Z</updated>
+    <updated>2021-01-27T01:45:43.665Z</updated>
     
     <summary type="html">
     
@@ -191,7 +201,7 @@
     <link href="http://skygiter.gitee.io/2020/08/06/ImportComponentInVue/"/>
     <id>http://skygiter.gitee.io/2020/08/06/ImportComponentInVue/</id>
     <published>2020-08-05T21:17:59.000Z</published>
-    <updated>2021-01-26T07:08:59.342Z</updated>
+    <updated>2021-01-27T01:45:43.666Z</updated>
     
     <summary type="html">
     
@@ -220,7 +230,7 @@
     <link href="http://skygiter.gitee.io/2020/08/06/IconfontInVue/"/>
     <id>http://skygiter.gitee.io/2020/08/06/IconfontInVue/</id>
     <published>2020-08-05T21:14:03.000Z</published>
-    <updated>2021-01-26T07:08:59.342Z</updated>
+    <updated>2021-01-27T01:45:43.666Z</updated>
     
     <summary type="html">
     
@@ -251,7 +261,7 @@
     <link href="http://skygiter.gitee.io/2020/07/27/DeepCopy/"/>
     <id>http://skygiter.gitee.io/2020/07/27/DeepCopy/</id>
     <published>2020-07-26T21:01:42.000Z</published>
-    <updated>2021-01-26T07:08:59.338Z</updated>
+    <updated>2021-01-27T01:45:43.663Z</updated>
     
     <summary type="html">
     
@@ -280,7 +290,7 @@
     <link href="http://skygiter.gitee.io/2020/07/27/WebpackErrorCssDependency/"/>
     <id>http://skygiter.gitee.io/2020/07/27/WebpackErrorCssDependency/</id>
     <published>2020-07-26T20:27:48.000Z</published>
-    <updated>2021-01-26T07:08:59.347Z</updated>
+    <updated>2021-01-27T01:45:43.674Z</updated>
     
     <summary type="html">
     
@@ -309,7 +319,7 @@
     <link href="http://skygiter.gitee.io/2020/07/26/JsCase00/"/>
     <id>http://skygiter.gitee.io/2020/07/26/JsCase00/</id>
     <published>2020-07-25T20:35:29.000Z</published>
-    <updated>2021-01-26T07:08:59.343Z</updated>
+    <updated>2021-01-27T01:45:43.667Z</updated>
     
     <summary type="html">
     
@@ -334,7 +344,7 @@
     <link href="http://skygiter.gitee.io/2020/07/25/CloseEslintInVue/"/>
     <id>http://skygiter.gitee.io/2020/07/25/CloseEslintInVue/</id>
     <published>2020-07-25T15:32:48.000Z</published>
-    <updated>2021-01-26T07:08:59.338Z</updated>
+    <updated>2021-01-27T01:45:43.663Z</updated>
     
     <summary type="html">
     
@@ -359,7 +369,7 @@
     <link href="http://skygiter.gitee.io/2020/07/25/StylusInVue/"/>
     <id>http://skygiter.gitee.io/2020/07/25/StylusInVue/</id>
     <published>2020-07-25T14:58:26.000Z</published>
-    <updated>2021-01-26T07:08:59.346Z</updated>
+    <updated>2021-01-27T01:45:43.672Z</updated>
     
     <summary type="html">
     
@@ -391,7 +401,7 @@
     <link href="http://skygiter.gitee.io/2020/07/25/Center/"/>
     <id>http://skygiter.gitee.io/2020/07/25/Center/</id>
     <published>2020-07-25T14:26:22.000Z</published>
-    <updated>2021-01-26T07:08:59.338Z</updated>
+    <updated>2021-01-27T01:45:43.662Z</updated>
     
     <summary type="html">
     
@@ -406,9 +416,9 @@
       <category term="HTML/CSS" scheme="http://skygiter.gitee.io/categories/%E5%89%8D%E7%AB%AF/HTML-CSS/"/>
     
     
-      <category term="前端面试题" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    
       <category term="HTML/CSS" scheme="http://skygiter.gitee.io/tags/HTML-CSS/"/>
+    
+      <category term="前端面试题" scheme="http://skygiter.gitee.io/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
     
   </entry>
   
@@ -417,7 +427,7 @@
     <link href="http://skygiter.gitee.io/2020/07/25/HexoTable/"/>
     <id>http://skygiter.gitee.io/2020/07/25/HexoTable/</id>
     <published>2020-07-25T13:27:18.000Z</published>
-    <updated>2021-01-26T07:08:59.341Z</updated>
+    <updated>2021-01-27T01:45:43.666Z</updated>
     
     <summary type="html">
     
@@ -448,7 +458,7 @@
     <link href="http://skygiter.gitee.io/2020/07/01/GitManual/"/>
     <id>http://skygiter.gitee.io/2020/07/01/GitManual/</id>
     <published>2020-07-01T14:15:58.000Z</published>
-    <updated>2021-01-26T07:08:59.339Z</updated>
+    <updated>2021-01-27T01:45:43.664Z</updated>
     
     <summary type="html">
     
@@ -477,7 +487,7 @@
     <link href="http://skygiter.gitee.io/2020/05/26/HexoMultiTerminal/"/>
     <id>http://skygiter.gitee.io/2020/05/26/HexoMultiTerminal/</id>
     <published>2020-05-26T11:24:01.000Z</published>
-    <updated>2021-01-26T07:08:59.341Z</updated>
+    <updated>2021-01-27T01:45:43.666Z</updated>
     
     <summary type="html">
     
@@ -508,7 +518,7 @@
     <link href="http://skygiter.gitee.io/2020/05/25/hexoDeployOnGitee/"/>
     <id>http://skygiter.gitee.io/2020/05/25/hexoDeployOnGitee/</id>
     <published>2020-05-25T09:39:01.000Z</published>
-    <updated>2021-01-26T07:08:59.348Z</updated>
+    <updated>2021-01-27T01:45:43.674Z</updated>
     
     <summary type="html">
     
@@ -543,7 +553,7 @@
     <link href="http://skygiter.gitee.io/2020/05/12/NexTConfig/"/>
     <id>http://skygiter.gitee.io/2020/05/12/NexTConfig/</id>
     <published>2020-05-12T10:01:44.000Z</published>
-    <updated>2021-01-26T07:08:59.344Z</updated>
+    <updated>2021-01-27T01:45:43.668Z</updated>
     
     <summary type="html">
     
@@ -576,7 +586,7 @@
     <link href="http://skygiter.gitee.io/2020/05/12/HexoBuildBlog/"/>
     <id>http://skygiter.gitee.io/2020/05/12/HexoBuildBlog/</id>
     <published>2020-05-12T08:59:52.000Z</published>
-    <updated>2021-01-26T07:08:59.340Z</updated>
+    <updated>2021-01-27T01:45:43.665Z</updated>
     
     <summary type="html">
     

@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>元素水平垂直居中(4种方式)</title>
-    <url>/2020/07/25/Center/</url>
-    <content><![CDATA[<ol>
-<li>已知块级元素的宽和高，使用绝对定位absolute和外边距实现水平垂直居中。<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一种方法: 知道长和宽，使用绝对定位+外边距设定水平垂直居中<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.center-box1 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin-top: -100px;</span><br><span class="line">    margin-left: -100px;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a></li>
-<li>使用css3 display:flex（IE存在兼容性问题）<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box2"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第二种方法: 使用css3样式属性display:flex设定水平垂直居中<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line">.center-box2 &#123;</span><br><span class="line">    margin: auto;</span><br><span class="line">    width: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>使用绝对定位+CSS3 transform（由于transform中translate偏移的百分比都是相对于自身而言的，所以不像方法一种那样必须知道子元素的宽高才行，但是对于IE只有IE9+才支持）<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box3"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第三种方法: 使用css3样式属性transform，transform中translate偏移的百分比值是相对于自身大小的<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-box3 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    transform: translate(-50%,-50%);</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">    width: 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>已知子元素的宽和高，设置其样式属性position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box4"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第四种方法: 已知宽和高，绝对定位+margin:auto;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.center-box4 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">    margin: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>HTML/CSS</category>
-      </categories>
-      <tags>
-        <tag>前端面试题</tag>
-        <tag>HTML/CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>在Vue项目中关闭Eslint</title>
     <url>/2020/07/25/CloseEslintInVue/</url>
     <content><![CDATA[<p>Vue项目开启Eslint经常会报一些格式警报或错误,如果嫌烦可以关闭Eslint</p>
@@ -44,36 +23,24 @@
       </tags>
   </entry>
   <entry>
-    <title>DeepCopy</title>
-    <url>/2020/07/27/DeepCopy/</url>
-    <content><![CDATA[<h3 id="js对象深拷贝的3种方法"><a href="#js对象深拷贝的3种方法" class="headerlink" title="js对象深拷贝的3种方法"></a>js对象深拷贝的3种方法</h3><p>js对象不像变量那样，简单的赋值就能进行克隆的，对象进行赋值时，只是创建了一个新的指针指向相同的存储空间。就像这样</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a=&#123;<span class="attr">a</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">var</span> b=a;</span><br><span class="line">b.a=<span class="number">2</span></span><br><span class="line"><span class="built_in">console</span>.log(a.a);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-<p>这时输出a你会发现，a的值同样发生了改变。<br>这一点在你进行数据操作时，又想保留原来数据时，你就需要深度克隆了。</p>
-<a id="more"></a>
-
-<ol>
-<li>方法一:js序列化</li>
-</ol>
-<p>有一种时通过js序列化，将js转换成字符串，然后再将字符串转换成js对象。</p>
-<p>具体代码为:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>:<span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> str = <span class="built_in">JSON</span>.stringify(obj); <span class="comment">//序列化对象</span></span><br><span class="line"><span class="keyword">var</span> newobj = <span class="built_in">JSON</span>.parse(str); <span class="comment">//还原</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>方法二:对象遍历逐条复制<br>就是进行对象的遍历复制，对对象的每一条属性进行复制，这样就能进行对象的深度克隆<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> str, newobj = obj.constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;<span class="comment">//constructor 属性返回对创建此对象的数组函数的引用。创建相同类型的空数据</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> obj !== <span class="string">'object'</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> obj) &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[i] === <span class="string">'object'</span>)&#123;<span class="comment">//判断对象的这条属性是否为对象</span></span><br><span class="line">        newobj[i] = newObj(obj[i]);<span class="comment">//若是对象进行嵌套调用</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        newobj[i] = obj[i];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newobj;<span class="comment">//返回深度克隆后的对象</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
-<li>方法三: ES6对象展开赋值<br>还一种就是应用es6的语法对象展开运算符进行对象的展开赋值；<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = &#123;<span class="attr">a</span>:<span class="number">0</span>&#125;</span><br><span class="line"><span class="keyword">let</span> b = &#123;...a&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>此方法是不是太简单了?!</p>
-</blockquote>
+    <title>元素水平垂直居中(4种方式)</title>
+    <url>/2020/07/25/Center/</url>
+    <content><![CDATA[<ol>
+<li>已知块级元素的宽和高，使用绝对定位absolute和外边距实现水平垂直居中。<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第一种方法: 知道长和宽，使用绝对定位+外边距设定水平垂直居中<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.center-box1 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    margin-top: -100px;</span><br><span class="line">    margin-left: -100px;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a></li>
+<li>使用css3 display:flex（IE存在兼容性问题）<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box2"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第二种方法: 使用css3样式属性display:flex设定水平垂直居中<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line">.center-box2 &#123;</span><br><span class="line">    margin: auto;</span><br><span class="line">    width: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>使用绝对定位+CSS3 transform（由于transform中translate偏移的百分比都是相对于自身而言的，所以不像方法一种那样必须知道子元素的宽高才行，但是对于IE只有IE9+才支持）<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box3"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第三种方法: 使用css3样式属性transform，transform中translate偏移的百分比值是相对于自身大小的<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.center-box3 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 50%;</span><br><span class="line">    left: 50%;</span><br><span class="line">    transform: translate(-50%,-50%);</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">    width: 200px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>已知子元素的宽和高，设置其样式属性position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"center-box4"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">p</span>&gt;</span>第四种方法: 已知宽和高，绝对定位+margin:auto;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">.box &#123;</span><br><span class="line">    background: #6c94be;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 450px;</span><br><span class="line">    position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.center-box4 &#123;</span><br><span class="line">    position: absolute;</span><br><span class="line">    top: 0;</span><br><span class="line">    left: 0;</span><br><span class="line">    bottom: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 200px;</span><br><span class="line">    background: #5B83AD;</span><br><span class="line">    margin: auto;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
 ]]></content>
       <categories>
         <category>前端</category>
-        <category>JavaScript</category>
+        <category>HTML/CSS</category>
       </categories>
       <tags>
+        <tag>HTML/CSS</tag>
         <tag>前端面试题</tag>
-        <tag>JavaScript</tag>
-        <tag>深拷贝</tag>
       </tags>
   </entry>
   <entry>
@@ -415,148 +382,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo常用指令</title>
-    <url>/2020/08/12/HexoCommands/</url>
-    <content><![CDATA[<h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
-<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
-<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
-<table>
-<thead>
-<tr>
-<th align="left">可选参数</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-p, –path</td>
-<td align="left">自定义新文章的路径</td>
-</tr>
-<tr>
-<td align="left">-r, –replace</td>
-<td align="left">如果存在同名文章，将其替换</td>
-</tr>
-<tr>
-<td align="left">-s, –slug</td>
-<td align="left">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
-</tr>
-</tbody></table>
-<a id="more"></a>
-
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate   <span class="comment"># 简写  hexo g</span></span><br></pre></td></tr></table></figure>
-<p>生成静态文件。</p>
-<table>
-<thead>
-<tr>
-<th align="left">可选参数</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-d,–deploy</td>
-<td align="left">文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td align="left">-w,–watch</td>
-<td align="left">监视文件变动</td>
-</tr>
-<tr>
-<td align="left">-b,–bail</td>
-<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
-</tr>
-<tr>
-<td align="left">-f,–force</td>
-<td align="left">强制重新生成文件<br>Hexo 引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。<br>使用该参数的效果接近 hexo clean &amp;&amp; hexo generate</td>
-</tr>
-<tr>
-<td align="left">-c,–concurrency</td>
-<td align="left">最大同时生成文件的数量，默认无限制</td>
-</tr>
-</tbody></table>
-<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>草稿转为正式文章。</p>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server <span class="comment"># 简写  hexo s</span></span><br></pre></td></tr></table></figure>
-<p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
-<table>
-<thead>
-<tr>
-<th align="left">可选参数</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-p, –port</td>
-<td align="left">设置端口</td>
-</tr>
-<tr>
-<td align="left">-s, –static</td>
-<td align="left">只使用静态文件</td>
-</tr>
-<tr>
-<td align="left">-l, –log</td>
-<td align="left">启动日记记录，使用覆盖记录格式</td>
-</tr>
-</tbody></table>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy   <span class="comment"># 简写: hexo d</span></span><br></pre></td></tr></table></figure>
-<p>部署网站</p>
-<table>
-<thead>
-<tr>
-<th align="left">可选参数</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-g, –generate</td>
-<td align="left">部署之前预先生成静态文件</td>
-</tr>
-</tbody></table>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
-<p>渲染文件。</p>
-<table>
-<thead>
-<tr>
-<th align="left">可选参数</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-o, –output</td>
-<td align="left">设置输出路径</td>
-</tr>
-</tbody></table>
-<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo migrate &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
-<p>从其他博客系统<a href="https://hexo.io/zh-cn/docs/migration" target="_blank" rel="noopener">迁移内容</a>。</p>
-<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
-<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<p>列出网站资料。</p>
-<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
-<p>显示hexo版本。</p>
-<h3 id="config-自定义配置文件的路径"><a href="#config-自定义配置文件的路径" class="headerlink" title="config(自定义配置文件的路径)"></a>config(自定义配置文件的路径)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 custom.yml 代替默认的 _config.yml</span></span><br><span class="line">hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span></span><br><span class="line">hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
-<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 _config.yml。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。</p>
-<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 _multiconfig.yml。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
-<h3 id="cwd-自定义当前工作目录"><a href="#cwd-自定义当前工作目录" class="headerlink" title="cwd(自定义当前工作目录)"></a>cwd(自定义当前工作目录)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --cwd /path/to/cwd</span><br></pre></td></tr></table></figure>
-<p>自定义当前工作目录（Current working directory）的路径。</p>
-<h3 id="模式选项-safe-debug-silent-draft"><a href="#模式选项-safe-debug-silent-draft" class="headerlink" title="模式选项(safe,debug,silent,draft)"></a>模式选项(safe,debug,silent,draft)</h3><h4 id="safe"><a href="#safe" class="headerlink" title="safe"></a>safe</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --safe</span><br></pre></td></tr></table></figure>
-<p>安全模式:在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p>
-<h4 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --debug</span><br></pre></td></tr></table></figure>
-<p>在终端中显示调试信息并记录到 debug.log。当您碰到问题时，可以尝试用调试模式重新执行一次，并提交调试信息到 GitHub。</p>
-<h4 id="silent"><a href="#silent" class="headerlink" title="silent"></a>silent</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --silent</span><br></pre></td></tr></table></figure>
-<p>隐藏终端信息。</p>
-<h4 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo --draft</span><br></pre></td></tr></table></figure>
-<p>显示草稿文章。</p>
-<h3 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">官方文档</a></h3>]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>博客搭建</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo 多终端管理</title>
     <url>/2020/05/26/HexoMultiTerminal/</url>
     <content><![CDATA[<h3 id="预备环境"><a href="#预备环境" class="headerlink" title="预备环境"></a>预备环境</h3><p>node.js,git<br>安装hexo</p>
@@ -689,6 +514,51 @@
       <tags>
         <tag>前端面试题</tag>
         <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue项目中如何优雅的使用Stylus</title>
+    <url>/2020/07/25/StylusInVue/</url>
+    <content><![CDATA[<p>引用stylus官网中的一句话：富于表现力、动态的、健壮的 CSS<br>stylus是一个强大的css预编译语言,stylus支持省略花括号，支持省略分号，代码整洁，支持引入，并且支持语法内函数<br><a href="https://stylus.bootcss.com/" target="_blank" rel="noopener">官方地址</a><br><a href="https://github.com/stylus/stylus/" target="_blank" rel="noopener">GitHub地址</a></p>
+<p>使用非常简单<br>安装stylus，使用npm安装,stylus和stylus-loader，一个都不能少</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install stylus stylus-loader --save-dev</span><br></pre></td></tr></table></figure>
+<p>使用分为两种，一种是直接在vue中的style模块中使用，这时在style模块中规定好就可以了</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;style lang&#x3D;&quot;stylus&quot; rel&#x3D;&quot;stylesheet&#x2F;stylus&quot;&gt;&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+<p>还有一种是作为.styl文件引入<br>把css内容放在styl文件中，然后在vue的style模块中通过@import引入</p>
+<a id="more"></a>
+
+<blockquote>
+<p>tips:<br>卸载 stylus :</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall stylus </span><br></pre></td></tr></table></figure>
+<p>查看 stylus版本：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm show style-loader version </span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>mixin.styl:</p>
+<p>//配置背景图片函数</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">bg-image</span><span class="params">(<span class="variable">$url</span>)</span></span></span><br><span class="line">  <span class="attribute">background-image</span>: url(<span class="variable">$url</span> + <span class="string">"2.png"</span>)</span><br><span class="line">  @media (-webkit-min-device-pixel-ratio: <span class="number">3</span>),(min-device-pixel-ratio: <span class="number">3</span>)</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="variable">$url</span> + <span class="string">"3.png"</span>)</span><br></pre></td></tr></table></figure>
+<p>variable.styl<br>// 颜色定义规范</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">color-theme &#x3D; #ffcd32</span><br></pre></td></tr></table></figure>
+
+<p>//字体定义规范</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">font-size-medium &#x3D; 14px</span><br></pre></td></tr></table></figure>
+
+<p>content.vue</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;style scoped lang=<span class="string">"stylus"</span> rel=<span class="string">"stylesheet/stylus"</span>&gt;</span><br><span class="line">  @import <span class="string">"~common/stylus/mixin"</span></span><br><span class="line">  @import <span class="string">"~common/stylus/variable"</span></span><br><span class="line">    .recommend-list</span><br><span class="line">      .list-title</span><br><span class="line">        <span class="attribute">height</span> <span class="number">300px</span></span><br><span class="line">        <span class="attribute">width</span> <span class="number">100%</span></span><br><span class="line">        <span class="attribute">font-size</span> <span class="variable">$font</span>-size-medium</span><br><span class="line">        <span class="attribute">color</span> <span class="variable">$color</span>-theme</span><br><span class="line">      .item</span><br><span class="line">        <span class="attribute">padding</span> <span class="number">0</span> <span class="number">20px</span> <span class="number">20px</span> <span class="number">20px</span></span><br><span class="line">        <span class="attribute">background</span> bg-image(<span class="string">'../images/bg.png'</span>)</span><br><span class="line">        &amp;.active</span><br><span class="line">          <span class="attribute">color</span> <span class="number">#fff</span></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<p>content.styl</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">.recommend-list</span><br><span class="line">      .list-title</span><br><span class="line">        <span class="attribute">height</span> <span class="number">65px</span></span><br><span class="line">        <span class="attribute">line-height</span> <span class="number">65px</span></span><br><span class="line">        <span class="attribute">text-align</span> center</span><br><span class="line">        <span class="attribute">font-size</span> <span class="variable">$font</span>-size-medium</span><br><span class="line">        <span class="attribute">color</span> <span class="variable">$color</span>-theme</span><br><span class="line">      .item</span><br><span class="line">        <span class="attribute">display</span> flex</span><br><span class="line">        <span class="attribute">box-sizing</span> border-box</span><br><span class="line">        <span class="attribute">align-items</span> center</span><br><span class="line">        <span class="attribute">padding</span> <span class="number">0</span> <span class="number">20px</span> <span class="number">20px</span> <span class="number">20px</span></span><br><span class="line">        <span class="attribute">background</span> bg-image(<span class="string">'../images/bg.png'</span>)</span><br><span class="line">        &amp;.active</span><br><span class="line">          <span class="attribute">color</span> <span class="number">#fff</span></span><br></pre></td></tr></table></figure>
+<p>content.vue</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  @import &quot;content.styl&quot;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.jianshu.com/p/8601ccf91225" target="_blank" rel="noopener">参考文章</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>CSS预处理器</category>
+        <category>Stylus</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>Stylus</tag>
       </tags>
   </entry>
   <entry>
@@ -836,51 +706,6 @@ canvas_nest: true</code><br>添加完毕,效果图如下<br><img src="http://qah
       </tags>
   </entry>
   <entry>
-    <title>Vue项目中如何优雅的使用Stylus</title>
-    <url>/2020/07/25/StylusInVue/</url>
-    <content><![CDATA[<p>引用stylus官网中的一句话：富于表现力、动态的、健壮的 CSS<br>stylus是一个强大的css预编译语言,stylus支持省略花括号，支持省略分号，代码整洁，支持引入，并且支持语法内函数<br><a href="https://stylus.bootcss.com/" target="_blank" rel="noopener">官方地址</a><br><a href="https://github.com/stylus/stylus/" target="_blank" rel="noopener">GitHub地址</a></p>
-<p>使用非常简单<br>安装stylus，使用npm安装,stylus和stylus-loader，一个都不能少</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install stylus stylus-loader --save-dev</span><br></pre></td></tr></table></figure>
-<p>使用分为两种，一种是直接在vue中的style模块中使用，这时在style模块中规定好就可以了</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;style lang&#x3D;&quot;stylus&quot; rel&#x3D;&quot;stylesheet&#x2F;stylus&quot;&gt;&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-<p>还有一种是作为.styl文件引入<br>把css内容放在styl文件中，然后在vue的style模块中通过@import引入</p>
-<a id="more"></a>
-
-<blockquote>
-<p>tips:<br>卸载 stylus :</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm uninstall stylus </span><br></pre></td></tr></table></figure>
-<p>查看 stylus版本：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm show style-loader version </span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>mixin.styl:</p>
-<p>//配置背景图片函数</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">bg-image</span><span class="params">(<span class="variable">$url</span>)</span></span></span><br><span class="line">  <span class="attribute">background-image</span>: url(<span class="variable">$url</span> + <span class="string">"2.png"</span>)</span><br><span class="line">  @media (-webkit-min-device-pixel-ratio: <span class="number">3</span>),(min-device-pixel-ratio: <span class="number">3</span>)</span><br><span class="line">    <span class="attribute">background-image</span>: url(<span class="variable">$url</span> + <span class="string">"3.png"</span>)</span><br></pre></td></tr></table></figure>
-<p>variable.styl<br>// 颜色定义规范</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">color-theme &#x3D; #ffcd32</span><br></pre></td></tr></table></figure>
-
-<p>//字体定义规范</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">font-size-medium &#x3D; 14px</span><br></pre></td></tr></table></figure>
-
-<p>content.vue</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">&lt;style scoped lang=<span class="string">"stylus"</span> rel=<span class="string">"stylesheet/stylus"</span>&gt;</span><br><span class="line">  @import <span class="string">"~common/stylus/mixin"</span></span><br><span class="line">  @import <span class="string">"~common/stylus/variable"</span></span><br><span class="line">    .recommend-list</span><br><span class="line">      .list-title</span><br><span class="line">        <span class="attribute">height</span> <span class="number">300px</span></span><br><span class="line">        <span class="attribute">width</span> <span class="number">100%</span></span><br><span class="line">        <span class="attribute">font-size</span> <span class="variable">$font</span>-size-medium</span><br><span class="line">        <span class="attribute">color</span> <span class="variable">$color</span>-theme</span><br><span class="line">      .item</span><br><span class="line">        <span class="attribute">padding</span> <span class="number">0</span> <span class="number">20px</span> <span class="number">20px</span> <span class="number">20px</span></span><br><span class="line">        <span class="attribute">background</span> bg-image(<span class="string">'../images/bg.png'</span>)</span><br><span class="line">        &amp;.active</span><br><span class="line">          <span class="attribute">color</span> <span class="number">#fff</span></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<p>content.styl</p>
-<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line">.recommend-list</span><br><span class="line">      .list-title</span><br><span class="line">        <span class="attribute">height</span> <span class="number">65px</span></span><br><span class="line">        <span class="attribute">line-height</span> <span class="number">65px</span></span><br><span class="line">        <span class="attribute">text-align</span> center</span><br><span class="line">        <span class="attribute">font-size</span> <span class="variable">$font</span>-size-medium</span><br><span class="line">        <span class="attribute">color</span> <span class="variable">$color</span>-theme</span><br><span class="line">      .item</span><br><span class="line">        <span class="attribute">display</span> flex</span><br><span class="line">        <span class="attribute">box-sizing</span> border-box</span><br><span class="line">        <span class="attribute">align-items</span> center</span><br><span class="line">        <span class="attribute">padding</span> <span class="number">0</span> <span class="number">20px</span> <span class="number">20px</span> <span class="number">20px</span></span><br><span class="line">        <span class="attribute">background</span> bg-image(<span class="string">'../images/bg.png'</span>)</span><br><span class="line">        &amp;.active</span><br><span class="line">          <span class="attribute">color</span> <span class="number">#fff</span></span><br></pre></td></tr></table></figure>
-<p>content.vue</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">  @import &quot;content.styl&quot;</span><br><span class="line">&lt;&#x2F;style&gt;</span><br></pre></td></tr></table></figure>
-<p><a href="https://www.jianshu.com/p/8601ccf91225" target="_blank" rel="noopener">参考文章</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>CSS预处理器</category>
-        <category>Stylus</category>
-      </categories>
-      <tags>
-        <tag>Vue</tag>
-        <tag>Stylus</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>uni-app快速入门</title>
     <url>/2020/09/15/UniApp/</url>
     <content><![CDATA[<h2 id="什么是-uni-app"><a href="#什么是-uni-app" class="headerlink" title="什么是 uni-app?"></a>什么是 uni-app?</h2><blockquote>
@@ -904,6 +729,8 @@ canvas_nest: true</code><br>添加完毕,效果图如下<br><img src="http://qah
 </blockquote>
 </blockquote>
 </blockquote>
+<a id="more"></a>
+
 <h2 id="标签-组件变化"><a href="#标签-组件变化" class="headerlink" title="标签/组件变化"></a>标签/组件变化</h2><p>uni-app参考小程序规范，提供了一批内置组件。</p>
 <h3 id="html标签和uni-app内置组件的映射表"><a href="#html标签和uni-app内置组件的映射表" class="headerlink" title="html标签和uni-app内置组件的映射表"></a>html标签和uni-app内置组件的映射表</h3><ul>
 <li>div 改成 view</li>
@@ -997,17 +824,145 @@ canvas_nest: true</code><br>添加完毕,效果图如下<br><img src="http://qah
       </tags>
   </entry>
   <entry>
-    <title>Vue项目SEO优化的4种方案</title>
-    <url>/2020/10/13/Vue4waysForSEO/</url>
-    <content><![CDATA[<h1 id="SSR服务器渲染"><a href="#SSR服务器渲染" class="headerlink" title="SSR服务器渲染"></a>SSR服务器渲染</h1><h1 id="静态化"><a href="#静态化" class="headerlink" title="静态化"></a>静态化</h1><h1 id="预渲染-prerender-spa-plugin"><a href="#预渲染-prerender-spa-plugin" class="headerlink" title="预渲染 prerender-spa-plugin"></a>预渲染 prerender-spa-plugin</h1><h1 id="使用Phantomjs针对爬虫做优化"><a href="#使用Phantomjs针对爬虫做优化" class="headerlink" title="使用Phantomjs针对爬虫做优化"></a>使用Phantomjs针对爬虫做优化</h1><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1>]]></content>
+    <title>Hexo常用指令</title>
+    <url>/2020/08/12/HexoCommands/</url>
+    <content><![CDATA[<h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init [folder]</span><br></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
+<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<p>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</p>
+<table>
+<thead>
+<tr>
+<th align="left">可选参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-p, –path</td>
+<td align="left">自定义新文章的路径</td>
+</tr>
+<tr>
+<td align="left">-r, –replace</td>
+<td align="left">如果存在同名文章，将其替换</td>
+</tr>
+<tr>
+<td align="left">-s, –slug</td>
+<td align="left">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
+</tr>
+</tbody></table>
+<a id="more"></a>
+
+<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate   <span class="comment"># 简写  hexo g</span></span><br></pre></td></tr></table></figure>
+<p>生成静态文件。</p>
+<table>
+<thead>
+<tr>
+<th align="left">可选参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-d,–deploy</td>
+<td align="left">文件生成后立即部署网站</td>
+</tr>
+<tr>
+<td align="left">-w,–watch</td>
+<td align="left">监视文件变动</td>
+</tr>
+<tr>
+<td align="left">-b,–bail</td>
+<td align="left">生成过程中如果发生任何未处理的异常则抛出异常</td>
+</tr>
+<tr>
+<td align="left">-f,–force</td>
+<td align="left">强制重新生成文件<br>Hexo 引入了差分机制，如果 public 目录存在，那么 hexo g 只会重新生成改动的文件。<br>使用该参数的效果接近 hexo clean &amp;&amp; hexo generate</td>
+</tr>
+<tr>
+<td align="left">-c,–concurrency</td>
+<td align="left">最大同时生成文件的数量，默认无限制</td>
+</tr>
+</tbody></table>
+<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<p>草稿转为正式文章。</p>
+<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo server <span class="comment"># 简写  hexo s</span></span><br></pre></td></tr></table></figure>
+<p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">可选参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-p, –port</td>
+<td align="left">设置端口</td>
+</tr>
+<tr>
+<td align="left">-s, –static</td>
+<td align="left">只使用静态文件</td>
+</tr>
+<tr>
+<td align="left">-l, –log</td>
+<td align="left">启动日记记录，使用覆盖记录格式</td>
+</tr>
+</tbody></table>
+<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy   <span class="comment"># 简写: hexo d</span></span><br></pre></td></tr></table></figure>
+<p>部署网站</p>
+<table>
+<thead>
+<tr>
+<th align="left">可选参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-g, –generate</td>
+<td align="left">部署之前预先生成静态文件</td>
+</tr>
+</tbody></table>
+<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
+<p>渲染文件。</p>
+<table>
+<thead>
+<tr>
+<th align="left">可选参数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-o, –output</td>
+<td align="left">设置输出路径</td>
+</tr>
+</tbody></table>
+<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo migrate &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>从其他博客系统<a href="https://hexo.io/zh-cn/docs/migration" target="_blank" rel="noopener">迁移内容</a>。</p>
+<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<p>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo list &lt;<span class="built_in">type</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>列出网站资料。</p>
+<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo version</span><br></pre></td></tr></table></figure>
+<p>显示hexo版本。</p>
+<h3 id="config-自定义配置文件的路径"><a href="#config-自定义配置文件的路径" class="headerlink" title="config(自定义配置文件的路径)"></a>config(自定义配置文件的路径)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 使用 custom.yml 代替默认的 _config.yml</span></span><br><span class="line">hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用 custom.yml 和 custom2.json，其中 custom2.json 优先级更高</span></span><br><span class="line">hexo generate --config custom.yml,custom2.json,custom3.yml</span><br></pre></td></tr></table></figure>
+<p>自定义配置文件的路径，指定这个参数后将不再使用默认的 _config.yml。<br>你可以使用一个 YAML 或 JSON 文件的路径，也可以使用逗号分隔（无空格）的多个 YAML 或 JSON 文件的路径。</p>
+<p>当你指定了多个配置文件以后，Hexo 会按顺序将这部分配置文件合并成一个 _multiconfig.yml。如果遇到重复的配置，排在后面的文件的配置会覆盖排在前面的文件的配置。这个原则适用于任意数量、任意深度的 YAML 和 JSON 文件。</p>
+<h3 id="cwd-自定义当前工作目录"><a href="#cwd-自定义当前工作目录" class="headerlink" title="cwd(自定义当前工作目录)"></a>cwd(自定义当前工作目录)</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --cwd /path/to/cwd</span><br></pre></td></tr></table></figure>
+<p>自定义当前工作目录（Current working directory）的路径。</p>
+<h3 id="模式选项-safe-debug-silent-draft"><a href="#模式选项-safe-debug-silent-draft" class="headerlink" title="模式选项(safe,debug,silent,draft)"></a>模式选项(safe,debug,silent,draft)</h3><h4 id="safe"><a href="#safe" class="headerlink" title="safe"></a>safe</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --safe</span><br></pre></td></tr></table></figure>
+<p>安全模式:在安全模式下，不会载入插件和脚本。当您在安装新插件遭遇问题时，可以尝试以安全模式重新执行。</p>
+<h4 id="debug"><a href="#debug" class="headerlink" title="debug"></a>debug</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --debug</span><br></pre></td></tr></table></figure>
+<p>在终端中显示调试信息并记录到 debug.log。当您碰到问题时，可以尝试用调试模式重新执行一次，并提交调试信息到 GitHub。</p>
+<h4 id="silent"><a href="#silent" class="headerlink" title="silent"></a>silent</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --silent</span><br></pre></td></tr></table></figure>
+<p>隐藏终端信息。</p>
+<h4 id="draft"><a href="#draft" class="headerlink" title="draft"></a>draft</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo --draft</span><br></pre></td></tr></table></figure>
+<p>显示草稿文章。</p>
+<h3 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a><a href="https://hexo.io/zh-cn/docs/commands.html" target="_blank" rel="noopener">官方文档</a></h3>]]></content>
       <categories>
-        <category>前端</category>
-        <category>Vue</category>
+        <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Vue</tag>
-        <tag>SEO</tag>
-        <tag>SSR</tag>
+        <tag>Hexo</tag>
+        <tag>博客搭建</tag>
       </tags>
   </entry>
   <entry>
@@ -1023,6 +978,26 @@ canvas_nest: true</code><br>添加完毕,效果图如下<br><img src="http://qah
       <tags>
         <tag>Vue</tag>
         <tag>Webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue.js入门教程</title>
+    <url>/2021/01/19/vue-base/</url>
+    <content><![CDATA[<h1 id="vue-js中data为什么是个函数？"><a href="#vue-js中data为什么是个函数？" class="headerlink" title="vue.js中data为什么是个函数？"></a>vue.js中data为什么是个函数？</h1><p>函数形成闭包，避免数据污染</p>
+<h1 id="export-default-xxx-和-export-xxx-的区别？"><a href="#export-default-xxx-和-export-xxx-的区别？" class="headerlink" title="export default xxx 和 export xxx 的区别？"></a>export default xxx 和 export xxx 的区别？</h1><p>导出1个和多个的问题，前者可导出多个，后者导出一个方法</p>
+<h1 id="Vue版本和Vue-cli版本的区别"><a href="#Vue版本和Vue-cli版本的区别" class="headerlink" title="Vue版本和Vue-cli版本的区别"></a>Vue版本和Vue-cli版本的区别</h1><a id="more"></a>
+
+<h1 id="Vue2-0和-Vue3-0的区别"><a href="#Vue2-0和-Vue3-0的区别" class="headerlink" title="Vue2.0和 Vue3.0的区别"></a>Vue2.0和 Vue3.0的区别</h1><h1 id="webpack属性配置"><a href="#webpack属性配置" class="headerlink" title="webpack属性配置"></a>webpack属性配置</h1><h1 id="webpack-ES6的处理"><a href="#webpack-ES6的处理" class="headerlink" title="webpack-ES6的处理"></a>webpack-ES6的处理</h1><h1 id="ES6代码变化"><a href="#ES6代码变化" class="headerlink" title="ES6代码变化"></a>ES6代码变化</h1><h1 id="vue全局组件"><a href="#vue全局组件" class="headerlink" title="vue全局组件"></a>vue全局组件</h1><p>在main.js引入再通过vue.component(‘组件名’,’组件对象’)注入即可在其他文件中引入该全局组件，无需重复引入和声明</p>
+<h1 id="父子组件传值"><a href="#父子组件传值" class="headerlink" title="父子组件传值"></a>父子组件传值</h1><h1 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h1><h1 id="获取DOM元素"><a href="#获取DOM元素" class="headerlink" title="获取DOM元素"></a>获取DOM元素</h1><h1 id="mint-ui"><a href="#mint-ui" class="headerlink" title="mint-ui"></a>mint-ui</h1><p>饿了么出品移动端组件库</p>
+<h1 id="wappalyzer"><a href="#wappalyzer" class="headerlink" title="wappalyzer"></a>wappalyzer</h1><p>查看网站使用的技术栈，也不一定准，需要翻墙安装插件</p>
+<h1 id="use实际操作"><a href="#use实际操作" class="headerlink" title="use实际操作"></a>use实际操作</h1>]]></content>
+      <categories>
+        <category>前端</category>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>前端</tag>
       </tags>
   </entry>
   <entry>
@@ -1048,21 +1023,50 @@ canvas_nest: true</code><br>添加完毕,效果图如下<br><img src="http://qah
       </tags>
   </entry>
   <entry>
-    <title>Vue.js入门教程</title>
-    <url>/2021/01/19/vue-base/</url>
-    <content><![CDATA[<h1 id="vue-js中data为什么是个函数？"><a href="#vue-js中data为什么是个函数？" class="headerlink" title="vue.js中data为什么是个函数？"></a>vue.js中data为什么是个函数？</h1><p>函数形成闭包，避免数据污染</p>
-<h1 id="export-default-xxx-和-export-xxx-的区别？"><a href="#export-default-xxx-和-export-xxx-的区别？" class="headerlink" title="export default xxx 和 export xxx 的区别？"></a>export default xxx 和 export xxx 的区别？</h1><p>导出1个和多个的问题，前者可导出多个，后者导出一个方法</p>
-<h1 id="Vue版本和Vue-cli版本的区别"><a href="#Vue版本和Vue-cli版本的区别" class="headerlink" title="Vue版本和Vue-cli版本的区别"></a>Vue版本和Vue-cli版本的区别</h1><h1 id="Vue2-0和-Vue3-0的区别"><a href="#Vue2-0和-Vue3-0的区别" class="headerlink" title="Vue2.0和 Vue3.0的区别"></a>Vue2.0和 Vue3.0的区别</h1><h1 id="webpack属性配置"><a href="#webpack属性配置" class="headerlink" title="webpack属性配置"></a>webpack属性配置</h1><h1 id="webpack-ES6的处理"><a href="#webpack-ES6的处理" class="headerlink" title="webpack-ES6的处理"></a>webpack-ES6的处理</h1><h1 id="ES6代码变化"><a href="#ES6代码变化" class="headerlink" title="ES6代码变化"></a>ES6代码变化</h1><h1 id="vue全局组件"><a href="#vue全局组件" class="headerlink" title="vue全局组件"></a>vue全局组件</h1><p>在main.js引入再通过vue.component(‘组件名’,’组件对象’)注入即可在其他文件中引入该全局组件，无需重复引入和声明</p>
-<h1 id="父子组件传值"><a href="#父子组件传值" class="headerlink" title="父子组件传值"></a>父子组件传值</h1><h1 id="过滤器"><a href="#过滤器" class="headerlink" title="过滤器"></a>过滤器</h1><h1 id="获取DOM元素"><a href="#获取DOM元素" class="headerlink" title="获取DOM元素"></a>获取DOM元素</h1><h1 id="mint-ui"><a href="#mint-ui" class="headerlink" title="mint-ui"></a>mint-ui</h1><p>饿了么出品移动端组件库</p>
-<h1 id="wappalyzer"><a href="#wappalyzer" class="headerlink" title="wappalyzer"></a>wappalyzer</h1><p>查看网站使用的技术栈，也不一定准，需要翻墙安装插件</p>
-<h1 id="use实际操作"><a href="#use实际操作" class="headerlink" title="use实际操作"></a>use实际操作</h1>]]></content>
+    <title>Vue项目SEO优化的4种方案</title>
+    <url>/2020/10/13/Vue4waysForSEO/</url>
+    <content><![CDATA[<h1 id="SSR服务器渲染"><a href="#SSR服务器渲染" class="headerlink" title="SSR服务器渲染"></a>SSR服务器渲染</h1><h1 id="静态化"><a href="#静态化" class="headerlink" title="静态化"></a>静态化</h1><h1 id="预渲染-prerender-spa-plugin"><a href="#预渲染-prerender-spa-plugin" class="headerlink" title="预渲染 prerender-spa-plugin"></a>预渲染 prerender-spa-plugin</h1><h1 id="使用Phantomjs针对爬虫做优化"><a href="#使用Phantomjs针对爬虫做优化" class="headerlink" title="使用Phantomjs针对爬虫做优化"></a>使用Phantomjs针对爬虫做优化</h1><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1>]]></content>
       <categories>
         <category>前端</category>
         <category>Vue</category>
       </categories>
       <tags>
         <tag>Vue</tag>
-        <tag>前端</tag>
+        <tag>SEO</tag>
+        <tag>SSR</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DeepCopy</title>
+    <url>/2020/07/27/DeepCopy/</url>
+    <content><![CDATA[<h3 id="js对象深拷贝的3种方法"><a href="#js对象深拷贝的3种方法" class="headerlink" title="js对象深拷贝的3种方法"></a>js对象深拷贝的3种方法</h3><p>js对象不像变量那样，简单的赋值就能进行克隆的，对象进行赋值时，只是创建了一个新的指针指向相同的存储空间。就像这样</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> a=&#123;<span class="attr">a</span>:<span class="number">1</span>&#125;</span><br><span class="line"><span class="keyword">var</span> b=a;</span><br><span class="line">b.a=<span class="number">2</span></span><br><span class="line"><span class="built_in">console</span>.log(a.a);  <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
+<p>这时输出a你会发现，a的值同样发生了改变。<br>这一点在你进行数据操作时，又想保留原来数据时，你就需要深度克隆了。</p>
+<a id="more"></a>
+
+<ol>
+<li>方法一:js序列化</li>
+</ol>
+<p>有一种时通过js序列化，将js转换成字符串，然后再将字符串转换成js对象。</p>
+<p>具体代码为:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>:<span class="number">1</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> str = <span class="built_in">JSON</span>.stringify(obj); <span class="comment">//序列化对象</span></span><br><span class="line"><span class="keyword">var</span> newobj = <span class="built_in">JSON</span>.parse(str); <span class="comment">//还原</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>方法二:对象遍历逐条复制<br>就是进行对象的遍历复制，对对象的每一条属性进行复制，这样就能进行对象的深度克隆<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> str, newobj = obj.constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;<span class="comment">//constructor 属性返回对创建此对象的数组函数的引用。创建相同类型的空数据</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">typeof</span> obj !== <span class="string">'object'</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> obj) &#123;</span><br><span class="line">      <span class="keyword">if</span> (<span class="keyword">typeof</span> obj[i] === <span class="string">'object'</span>)&#123;<span class="comment">//判断对象的这条属性是否为对象</span></span><br><span class="line">        newobj[i] = newObj(obj[i]);<span class="comment">//若是对象进行嵌套调用</span></span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        newobj[i] = obj[i];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newobj;<span class="comment">//返回深度克隆后的对象</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+<li>方法三: ES6对象展开赋值<br>还一种就是应用es6的语法对象展开运算符进行对象的展开赋值；<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> a = &#123;<span class="attr">a</span>:<span class="number">0</span>&#125;</span><br><span class="line"><span class="keyword">let</span> b = &#123;...a&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此方法是不是太简单了?!</p>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>前端面试题</tag>
+        <tag>JavaScript</tag>
+        <tag>深拷贝</tag>
       </tags>
   </entry>
 </search>
